@@ -1,0 +1,34 @@
+<svg width="900" height="24" viewBox="0 0 900 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#E23636" stop-opacity="0" />
+      <stop offset="25%" stop-color="#3F3F46" stop-opacity="0.5" />
+      <stop offset="45%" stop-color="#E23636" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#FF3344" stop-opacity="1" />
+      <stop offset="55%" stop-color="#E23636" stop-opacity="0.8" />
+      <stop offset="75%" stop-color="#3F3F46" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#E23636" stop-opacity="0" />
+    </linearGradient>
+
+    <filter id="nodeGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Horizontal divider line -->
+  <line x1="20" y1="12" x2="880" y2="12" stroke="url(#lineGrad)" stroke-width="1.2" />
+
+  <!-- Center Spider-Node Diamond & Wings -->
+  <g transform="translate(450, 12)">
+    <!-- Small flanking ticks -->
+    <line x1="-30" y1="-3" x2="-30" y2="3" stroke="#E23636" stroke-opacity="0.6" stroke-width="1" />
+    <line x1="30" y1="-3" x2="30" y2="3" stroke="#E23636" stroke-opacity="0.6" stroke-width="1" />
+    
+    <!-- Outer halo -->
+    <circle cx="0" cy="0" r="6" fill="#E23636" fill-opacity="0.15" />
+    
+    <!-- Central diamond node -->
+    <path d="M 0 -4 L 4 0 L 0 4 L -4 0 Z" fill="#FF3344" filter="url(#nodeGlow)" />
+  </g>
+</svg>

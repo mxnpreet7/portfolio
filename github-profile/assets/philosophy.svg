@@ -1,0 +1,70 @@
+<svg width="900" height="130" viewBox="0 0 900 130" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="philBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0C0C10" />
+      <stop offset="100%" stop-color="#070709" />
+    </linearGradient>
+    <linearGradient id="philBorder" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#E23636" stop-opacity="0.4" />
+      <stop offset="50%" stop-color="#27272A" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#E23636" stop-opacity="0.2" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    .code-label {
+      font-family: 'SF Mono', Consolas, monospace;
+      font-size: 10px;
+      fill: #FF4D4D;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+    .principle-title {
+      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      fill: #FFFFFF;
+      letter-spacing: 0.5px;
+    }
+    .principle-desc {
+      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', sans-serif;
+      font-size: 11px;
+      font-weight: 400;
+      fill: #A1A1AA;
+      line-height: 1.4;
+    }
+  </style>
+
+  <!-- Container -->
+  <rect width="900" height="130" rx="12" fill="url(#philBg)" stroke="url(#philBorder)" stroke-width="1" />
+
+  <!-- Principle 1 -->
+  <g transform="translate(40, 24)">
+    <text x="0" y="10" class="code-label">01 // FOUNDATION</text>
+    <text x="0" y="34" class="principle-title">Learn Deeply</text>
+    <text x="0" y="58" class="principle-desc">Master core principles in memory, logic,</text>
+    <text x="0" y="74" class="principle-desc">and architecture before abstractions.</text>
+  </g>
+
+  <!-- Divider 1 -->
+  <line x1="310" y1="25" x2="310" y2="105" stroke="#27272A" stroke-width="1" />
+
+  <!-- Principle 2 -->
+  <g transform="translate(345, 24)">
+    <text x="0" y="10" class="code-label">02 // CRAFTSMANSHIP</text>
+    <text x="0" y="34" class="principle-title">Build Consistently</text>
+    <text x="0" y="58" class="principle-desc">Transform theoretical concepts into tested,</text>
+    <text x="0" y="74" class="principle-desc">responsive, and high-performance software.</text>
+  </g>
+
+  <!-- Divider 2 -->
+  <line x1="620" y1="25" x2="620" y2="105" stroke="#27272A" stroke-width="1" />
+
+  <!-- Principle 3 -->
+  <g transform="translate(655, 24)">
+    <text x="0" y="10" class="code-label">03 // FRONTIER</text>
+    <text x="0" y="34" class="principle-title">Stay Curious</text>
+    <text x="0" y="58" class="principle-desc">Actively explore artificial intelligence,</text>
+    <text x="0" y="74" class="principle-desc">modern frameworks, and evolving paradigms.</text>
+  </g>
+</svg>

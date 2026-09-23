@@ -1,0 +1,176 @@
+<svg width="900" height="280" viewBox="0 0 900 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070709" />
+      <stop offset="50%" stop-color="#0E0E12" />
+      <stop offset="100%" stop-color="#050507" />
+    </linearGradient>
+
+    <!-- Crimson Spider-Glow Gradient -->
+    <radialGradient id="spiderGlow" cx="85%" cy="20%" r="60%">
+      <stop offset="0%" stop-color="#E23636" stop-opacity="0.22" />
+      <stop offset="50%" stop-color="#B31919" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="subtleBlueGlow" cx="15%" cy="85%" r="50%">
+      <stop offset="0%" stop-color="#1E3A8A" stop-opacity="0.18" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Accent Red Gradient -->
+    <linearGradient id="accentRed" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF3344" />
+      <stop offset="50%" stop-color="#E23636" />
+      <stop offset="100%" stop-color="#991B1B" />
+    </linearGradient>
+
+    <!-- Border Linear Gradient -->
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E23636" stop-opacity="0.5" />
+      <stop offset="30%" stop-color="#26262B" stop-opacity="0.8" />
+      <stop offset="70%" stop-color="#1A1A1F" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#E23636" stop-opacity="0.3" />
+    </linearGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="techGrid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#FFFFFF" stroke-opacity="0.02" stroke-width="1" />
+    </pattern>
+
+    <!-- Filter Glow -->
+    <filter id="glowEffect" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    .title-text {
+      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      font-weight: 800;
+      letter-spacing: 5px;
+      fill: #FFFFFF;
+    }
+    .badge-text {
+      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', Roboto, monospace;
+      font-weight: 600;
+      letter-spacing: 2px;
+      fill: #FF4D4D;
+      font-size: 11px;
+      text-transform: uppercase;
+    }
+    .tagline-text {
+      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', Roboto, sans-serif;
+      font-weight: 400;
+      letter-spacing: 0.5px;
+      fill: #A1A1AA;
+      font-size: 14px;
+    }
+    .meta-text {
+      font-family: 'SF Mono', Consolas, 'Liberation Mono', Menlo, monospace;
+      font-weight: 400;
+      letter-spacing: 1.5px;
+      fill: #71717A;
+      font-size: 10px;
+    }
+    .web-line {
+      stroke: #E23636;
+      stroke-opacity: 0.18;
+      stroke-width: 1;
+    }
+    .web-line-bright {
+      stroke: #FF3344;
+      stroke-opacity: 0.35;
+      stroke-width: 1.2;
+    }
+    .web-node {
+      fill: #FF3344;
+      opacity: 0.7;
+    }
+  </style>
+
+  <!-- Card Background -->
+  <rect width="900" height="280" rx="16" fill="url(#bgGrad)" />
+  <rect width="900" height="280" rx="16" fill="url(#spiderGlow)" />
+  <rect width="900" height="280" rx="16" fill="url(#subtleBlueGlow)" />
+  <rect width="900" height="280" rx="16" fill="url(#techGrid)" />
+
+  <!-- Outer Elegant Border -->
+  <rect x="0.5" y="0.5" width="899" height="279" rx="15.5" fill="none" stroke="url(#borderGrad)" stroke-width="1" />
+
+  <!-- Spider-Man Cinematic Web Geometry (Geometric / Architectural Aesthetic) -->
+  <!-- Top Right Web Complex -->
+  <g opacity="0.85">
+    <!-- Radial Web Rays -->
+    <line x1="900" y1="0" x2="680" y2="120" class="web-line" />
+    <line x1="900" y1="0" x2="740" y2="190" class="web-line-bright" />
+    <line x1="900" y1="0" x2="810" y2="240" class="web-line" />
+    <line x1="900" y1="0" x2="600" y2="50" class="web-line" />
+
+    <!-- Concentric Web Strands -->
+    <path d="M 820 0 C 810 40, 780 70, 740 85" fill="none" class="web-line" />
+    <path d="M 750 0 C 730 65, 680 115, 620 135" fill="none" class="web-line-bright" />
+    <path d="M 680 0 C 650 95, 580 160, 490 190" fill="none" class="web-line" />
+
+    <!-- Spider-Web Cross Intersections / Nodes -->
+    <circle cx="740" cy="85" r="2.5" class="web-node" filter="url(#glowEffect)" />
+    <circle cx="785" cy="50" r="2" class="web-node" />
+    <circle cx="680" cy="115" r="2.5" class="web-node" filter="url(#glowEffect)" />
+    <circle cx="620" cy="135" r="2" class="web-node" />
+    <circle cx="810" cy="130" r="1.5" class="web-node" />
+    <circle cx="850" cy="70" r="2" class="web-node" />
+  </g>
+
+  <!-- Bottom Left Web Corner Accents -->
+  <g opacity="0.6">
+    <line x1="0" y1="280" x2="160" y2="200" class="web-line" />
+    <line x1="0" y1="280" x2="220" y2="240" class="web-line" />
+    <line x1="0" y1="280" x2="100" y2="150" class="web-line" />
+    <path d="M 0 220 C 40 215, 75 235, 100 280" fill="none" class="web-line" />
+    <circle cx="65" cy="235" r="2" class="web-node" />
+  </g>
+
+  <!-- Status / Coordinate Header Badge (Apple-level Precision) -->
+  <g transform="translate(60, 42)">
+    <!-- Pill container -->
+    <rect x="0" y="0" width="280" height="24" rx="12" fill="#14141A" stroke="#2A2A35" stroke-width="1" />
+    <circle cx="12" cy="12" r="3.5" fill="#22C55E" />
+    <circle cx="12" cy="12" r="7" fill="#22C55E" opacity="0.2" />
+    <text x="26" y="16" class="badge-text" fill="#D4D4D8">SYSTEM // ACTIVE • CHANDIGARH, IN</text>
+  </g>
+
+  <!-- Technical Spec Marker (Right Aligned) -->
+  <g transform="translate(640, 48)">
+    <text x="200" y="10" text-anchor="end" class="meta-text">CSE • 2ND YEAR // SVIET</text>
+  </g>
+
+  <!-- Main Hero Brand Name -->
+  <g transform="translate(60, 120)">
+    <!-- Red spider accent bar -->
+    <rect x="0" y="-24" width="4" height="42" rx="2" fill="url(#accentRed)" />
+    
+    <text x="20" y="12" class="title-text" font-size="38">MANPREET SINGH</text>
+  </g>
+
+  <!-- Subtitle Tagline & Focus Area -->
+  <g transform="translate(80, 168)">
+    <!-- Red Badge Chip -->
+    <rect x="0" y="0" width="310" height="26" rx="6" fill="#E23636" fill-opacity="0.12" stroke="#E23636" stroke-opacity="0.35" stroke-width="1" />
+    <text x="12" y="17.5" class="badge-text">STUDENT DEVELOPER • CSE • AI EXPLORER</text>
+  </g>
+
+  <!-- Mission Statement / Tagline -->
+  <g transform="translate(80, 222)">
+    <text x="0" y="0" class="tagline-text">
+      Building with code. <tspan fill="#FFFFFF" font-weight="500">Exploring AI.</tspan> Creating what's next.
+    </text>
+  </g>
+
+  <!-- Minimal Decorative Status Grid (Bottom Right) -->
+  <g transform="translate(620, 218)">
+    <line x1="0" y1="12" x2="220" y2="12" stroke="#26262B" stroke-width="1" />
+    <text x="220" y="8" text-anchor="end" class="meta-text">PYTHON • C++ • JAVA • REACT</text>
+  </g>
+</svg>

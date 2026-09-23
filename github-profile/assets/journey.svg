@@ -1,0 +1,106 @@
+<svg width="900" height="150" viewBox="0 0 900 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#121217" />
+      <stop offset="100%" stop-color="#0A0A0D" />
+    </linearGradient>
+
+    <linearGradient id="cardBgActive" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E1316" />
+      <stop offset="100%" stop-color="#0E0A0C" />
+    </linearGradient>
+
+    <linearGradient id="activeBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF3344" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#E23636" stop-opacity="0.3" />
+    </linearGradient>
+
+    <linearGradient id="connLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#E23636" stop-opacity="0.2" />
+      <stop offset="50%" stop-color="#FF3344" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#E23636" stop-opacity="0.2" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    .step-title {
+      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', sans-serif;
+      font-weight: 700;
+      font-size: 11px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+    .step-sub {
+      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', sans-serif;
+      font-weight: 400;
+      font-size: 10px;
+      fill: #8E8E93;
+    }
+    .step-tag {
+      font-family: 'SF Mono', Consolas, monospace;
+      font-size: 9px;
+      letter-spacing: 0.5px;
+    }
+  </style>
+
+  <!-- Connecting Web Trajectory Line -->
+  <line x1="90" y1="75" x2="810" y2="75" stroke="url(#connLine)" stroke-width="1.5" stroke-dasharray="4 4" />
+
+  <!-- Node 1: FOUNDATION -->
+  <g transform="translate(20, 25)">
+    <rect width="155" height="100" rx="10" fill="url(#cardBg)" stroke="#26262E" stroke-width="1" />
+    <circle cx="20" cy="22" r="4" fill="#52525B" />
+    <text x="32" y="25" class="step-tag" fill="#A1A1AA">01 // CORE</text>
+    <text x="16" y="52" class="step-title" fill="#FFFFFF">Programming</text>
+    <text x="16" y="68" class="step-sub">C • C++ Fundamentals</text>
+    <rect x="16" y="76" width="70" height="16" rx="4" fill="#27272A" />
+    <text x="24" y="88" class="step-tag" fill="#D4D4D8">Foundation</text>
+  </g>
+
+  <!-- Node 2: SYSTEMS & OOP -->
+  <g transform="translate(195, 25)">
+    <rect width="155" height="100" rx="10" fill="url(#cardBg)" stroke="#26262E" stroke-width="1" />
+    <circle cx="20" cy="22" r="4" fill="#52525B" />
+    <text x="32" y="25" class="step-tag" fill="#A1A1AA">02 // LOGIC</text>
+    <text x="16" y="52" class="step-title" fill="#FFFFFF">OOP &amp; DSA</text>
+    <text x="16" y="68" class="step-sub">Java • Data Structures</text>
+    <rect x="16" y="76" width="72" height="16" rx="4" fill="#27272A" />
+    <text x="24" y="88" class="step-tag" fill="#D4D4D8">Core Study</text>
+  </g>
+
+  <!-- Node 3: MODERN WEB DEV (Highlighted / Active) -->
+  <g transform="translate(370, 20)">
+    <!-- Active Glow Background -->
+    <rect width="160" height="110" rx="12" fill="url(#cardBgActive)" stroke="url(#activeBorder)" stroke-width="1.5" />
+    <circle cx="22" cy="24" r="4" fill="#FF3344" />
+    <circle cx="22" cy="24" r="8" fill="#FF3344" fill-opacity="0.2" />
+    <text x="36" y="27" class="step-tag" fill="#FF4D4D">03 // ACTIVE</text>
+    <text x="18" y="56" class="step-title" fill="#FFFFFF" font-size="12">Modern Web</text>
+    <text x="18" y="74" class="step-sub">React • Tailwind • JS</text>
+    <rect x="18" y="82" width="88" height="18" rx="4" fill="#E23636" fill-opacity="0.2" stroke="#E23636" stroke-opacity="0.4" stroke-width="0.8" />
+    <text x="26" y="95" class="step-tag" fill="#FF8080">Currently Building</text>
+  </g>
+
+  <!-- Node 4: PROBLEM SOLVING -->
+  <g transform="translate(545, 25)">
+    <rect width="155" height="100" rx="10" fill="url(#cardBg)" stroke="#26262E" stroke-width="1" />
+    <circle cx="20" cy="22" r="4" fill="#52525B" />
+    <text x="32" y="25" class="step-tag" fill="#A1A1AA">04 // SYNTHESIS</text>
+    <text x="16" y="52" class="step-title" fill="#FFFFFF">Projects</text>
+    <text x="16" y="68" class="step-sub">Full Stack &amp; Tools</text>
+    <rect x="16" y="76" width="70" height="16" rx="4" fill="#27272A" />
+    <text x="24" y="88" class="step-tag" fill="#D4D4D8">In Progress</text>
+  </g>
+
+  <!-- Node 5: AI EXPLORATION -->
+  <g transform="translate(720, 25)">
+    <rect width="160" height="100" rx="10" fill="url(#cardBg)" stroke="#26262E" stroke-width="1" />
+    <circle cx="20" cy="22" r="4" fill="#3B82F6" />
+    <circle cx="20" cy="22" r="7" fill="#3B82F6" fill-opacity="0.2" />
+    <text x="32" y="25" class="step-tag" fill="#60A5FA">05 // FUTURE</text>
+    <text x="16" y="52" class="step-title" fill="#FFFFFF">AI Exploration</text>
+    <text x="16" y="68" class="step-sub">Python • Intelligent Apps</text>
+    <rect x="16" y="76" width="74" height="16" rx="4" fill="#1E3A8A" fill-opacity="0.3" stroke="#3B82F6" stroke-opacity="0.3" stroke-width="0.8" />
+    <text x="24" y="88" class="step-tag" fill="#93C5FD">Exploring</text>
+  </g>
+</svg>
