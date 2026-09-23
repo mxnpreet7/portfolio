@@ -7,9 +7,11 @@ import Projects from './components/Projects';
 import Education from './components/Education';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import MusicPlayer from './components/MusicPlayer';
 
 export default function App() {
   const [darkMode, setDarkMode] = useState(true);
+  const [isMusicPlaying, setIsMusicPlaying] = useState(false);
 
   // Sync theme with HTML root class
   useEffect(() => {
@@ -37,7 +39,7 @@ export default function App() {
       ></div>
 
       {/* Application Structure */}
-      <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
+      <Navbar darkMode={darkMode} setDarkMode={setDarkMode} isMusicPlaying={isMusicPlaying} />
       
       <main className="relative z-10">
         <Hero />
@@ -49,6 +51,10 @@ export default function App() {
       </main>
 
       <Footer />
+
+      {/* Floating Music Player with Instagram In-App Autoplay Support */}
+      <MusicPlayer isMusicPlaying={isMusicPlaying} setIsMusicPlaying={setIsMusicPlaying} />
     </div>
   );
 }
+

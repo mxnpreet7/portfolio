@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Menu, X, Sun, Moon, Sparkles, Send } from 'lucide-react';
 import { navLinks, personalInfo } from '../data/portfolio';
 
-export default function Navbar({ darkMode, setDarkMode }) {
+export default function Navbar({ darkMode, setDarkMode, isMusicPlaying }) {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState('hero');
@@ -52,19 +52,28 @@ export default function Navbar({ darkMode, setDarkMode }) {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
-          {/* Logo */}
-          <a
-            href="#hero"
-            onClick={(e) => handleNavClick(e, '#hero')}
-            className="group flex items-center gap-2 text-xl sm:text-2xl font-bold tracking-tight text-white focus:outline-none"
-          >
-            <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-indigo-500 to-cyan-500 flex items-center justify-center text-white shadow-md shadow-indigo-500/25 group-hover:scale-105 transition-transform duration-200">
-              <span className="font-mono text-sm font-extrabold tracking-tighter">MS</span>
-            </div>
-            <span className="font-sans font-bold text-slate-100 dark:text-white group-hover:text-indigo-400 transition-colors">
-              Manpreet<span className="text-indigo-400">.dev</span>
-            </span>
-          </a>
+          {/* Logo & Music Live Indicator */}
+          <div className="flex items-center gap-3">
+            <a
+              href="#hero"
+              onClick={(e) => handleNavClick(e, '#hero')}
+              className="group flex items-center gap-2 text-xl sm:text-2xl font-bold tracking-tight text-white focus:outline-none"
+            >
+              <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-indigo-500 to-cyan-500 flex items-center justify-center text-white shadow-md shadow-indigo-500/25 group-hover:scale-105 transition-transform duration-200">
+                <span className="font-mono text-sm font-extrabold tracking-tighter">MS</span>
+              </div>
+              <span className="font-sans font-bold text-slate-100 dark:text-white group-hover:text-indigo-400 transition-colors">
+                Manpreet<span className="text-indigo-400">.dev</span>
+              </span>
+            </a>
+
+            {isMusicPlaying && (
+              <div className="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-mono">
+                <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-ping"></span>
+                <span>Timeless ♫</span>
+              </div>
+            )}
+          </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-1 lg:gap-2">
